@@ -39,8 +39,8 @@ angular.module('schemaForm').directive('pickADate', function () {
       //hidden field that pickadate likes to create.
       //We use ngModel formatters instead to format the value.
       var opts = {
+        selectYears: selectYears,
         onClose: function () {
-          selectYears: selectYears,
           element.blur();
         },
         formatSubmit: null
