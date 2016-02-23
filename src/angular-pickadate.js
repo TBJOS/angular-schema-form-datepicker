@@ -25,13 +25,21 @@ angular.module('schemaForm').directive('pickADate', function () {
       //Bail out gracefully if pickadate is not loaded.
       if (!element.pickadate) {
         return;
+      } 
+
+      //Agrego personalizacion para mostrar año
+      var selectYears = 150;
+      if (angular.isDefined(attrs.selectYears)) {
+        selectYears = attrs.selectYears;
       }
 
       //By setting formatSubmit to null we inhibit the
       //hidden field that pickadate likes to create.
       //We use ngModel formatters instead to format the value.
       var opts = {
+
         onClose: function () {
+          selectYears: selectYears,
           element.blur();
         },
         formatSubmit: null
