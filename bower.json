@@ -1,12 +1,13 @@
 {
   "name": "angular-schema-form-datepicker",
   "main": [
-    "bootstrap-datepicker.min.js"
+    "bootstrap-datepicker.js"
   ],
   "version": "0.4.0",
   "authors": [
     "Textalk",
-    "David Jensen <david.lgj@gmail.com>"
+    "David Jensen <david.lgj@gmail.com>",
+    "Jose Abarca [custom] <jose.abarca.saavedra@gmail.com>"
   ],
   "moduleType": [
     "globals"
